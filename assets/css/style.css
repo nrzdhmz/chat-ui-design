@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+  background-color: #F5F8FF;
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -2;
+
+}
+.box{
+  position: relative;
+  background-color: #FFFFFF;
+  width: 360px;
+  height: 480px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 20px   #3fdea7;
+}
+.box::before{
+  position: absolute;
+  content: '';
+  top: -3rem;
+  left: -2.5rem;
+  width: 360px;
+  height: 380px;
+  background: linear-gradient(45deg,#3fded1,#3fdea7);
+  border-radius: 20px;
+  z-index: -1;
+}
+.container-box{
+  padding: 50px;
+}
+.container-box >p{
+  font-size: 18px;
+  font-weight: 500;
+}
+.button-box{
+  display: flex;
+}
+img{
+  width: 10px;
+  height: 10px;
+  z-index: 5;
+}
+button{
+  background-color: #1F2555;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 10px;
+  width: 100%;
+  height: 45px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.profile{
+  display: flex;
+  padding: 10px;
+  padding-top: 15px;
+}
+.profile:hover{
+  background-color: #F5F8FF;
+  border-radius: 10px;
+}
+.profile-pic{
+  width: 50px;
+  height: 50px;
+}
+.person{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
+}
+.person::before{
+  position: absolute;
+  content: '';
+  background-color: #37E2A6;
+  width: 12px;
+  height: 12px;
+  left: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.Rafel{
+  background-image: url(../img/person-1.jpg);
+}
+.Frank::before{
+  background-color: #DE7641;
+}
+.Frank{
+  background-image: url(../img/person-2.jpg);
+}
+.Ashley{
+  background-image: url(../img/person-3.jpg);
+}
+.Nancy{
+  background-image: url(../img/person-4.jpg);
+}
+.Nancy::before{
+  background-color: #D3D3D3;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 10px;
+}
+.bottom{
+  font-size: 12px;
+  padding-top: 2px;
+  font-weight: 500;
+}
+.info-top{
+  padding-top: 7px;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+}
+.left{
+  font-weight: 700;
+}
+.right{
+  font-size: 9px;
+  color: gray;
+}
